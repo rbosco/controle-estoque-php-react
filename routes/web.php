@@ -16,7 +16,7 @@
 
 Route::view('/{path?}', 'welcome');
 // Route::get('/', ['as' => 'produto', 'uses' => 'ProdutoController@index']);
-// Route::post('/manter-produto', ['as' => 'manter-produto', 'uses' => 'ProdutoController@manterProduto']);
+Route::post('/api/v1/manter-produto', ['as' => 'manter-produto', 'uses' => 'ProdutoController@manterProduto']);
 Route::get('/api/v1/listar-produto', ['as' => 'listar-produto', 'uses' => 'ProdutoController@index']);
 // Route::get('/remover-produto/{id}', ['as' => 'remover-produto', 'uses' => 'ProdutoController@removerProduto']);
 // Route::get('/editar-produto/{id}', ['as' => 'editar-produto', 'uses' => 'ProdutoController@editarProduto']);

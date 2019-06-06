@@ -31,6 +31,7 @@ class ProdutoController extends Controller
     public function manterProduto(Request $request)
     {
         $input = $request->all()['data'];
+        dd($input);
         $product = $this->productService->saveProduct($input);
         return $product;
     }
